@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-index
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+      <meta charset="UTF-8">
+      <title>TP2 GitOps - Loan FERREIRA GOY</title>
+      <style>
+        body { font-family: Segoe UI, Arial, sans-serif; max-width: 720px; margin: 60px auto; color: #1f2933; }
+        h1 { color: #0b6e4f; }
+        code { background: #eef2f5; padding: 2px 6px; border-radius: 4px; }
+      </style>
+    </head>
+    <body>
+      <h1>Page servie par NGINX, déployée par ArgoCD</h1>
+      <p>Cette page vient d'un <strong>ConfigMap</strong> stocké dans le dépôt
+         <code>jsptest1/gitops-demo</code> (branche <code>main</code>).</p>
+      <p>Chaîne GitOps : <code>git push</code> → ArgoCD détecte le commit → synchronisation → Minikube.</p>
+      <p>Loan FERREIRA GOY - ESGI M2 SRC - module DevSecOps</p>
+    </body>
+    </html>
