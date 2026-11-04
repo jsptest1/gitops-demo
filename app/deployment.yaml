@@ -9,6 +9,9 @@ spec:
       app: nginx
   template:
     metadata:
+      annotations:
+        # à incrémenter à chaque modification du ConfigMap (monté en subPath)
+        configmap/nginx-index-version: "2"
       labels:
         app: nginx
     spec:
