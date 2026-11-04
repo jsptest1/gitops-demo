@@ -21,5 +21,6 @@ data:
          <code>jsptest1/gitops-demo</code> (branche <code>main</code>).</p>
       <p>Chaîne GitOps : <code>git push</code> → ArgoCD détecte le commit → synchronisation → Minikube.</p>
       <p>Loan FERREIRA GOY - ESGI M2 SRC - module DevSecOps</p>
+      <p><strong>Mise à jour déclenchée par webhook GitHub</strong> (bonus TP2).</p>
     </body>
     </html>
